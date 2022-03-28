@@ -73,15 +73,15 @@ function Test(){
             dq += 0;
             return "You are underage. ";
         }
-        else if(formValues.age > 18 && formValues.age < 21){
+        else if(formValues.age > 18 && formValues.age <= 21){
             dq += + 0.3;
             return "You are a bit too young. ";
         }
-        else if(formValues.age > 21 && formValues.age < 25){
+        else if(formValues.age > 21 && formValues.age <= 25){
             dq += + 0.5;
             return "You are a bit on the younger side but within the desirable age range. ";
         }
-        else if(formValues.age > 25 && formValues.age < 40){
+        else if(formValues.age > 25 && formValues.age <= 40){
             dq +=+1;
             console.log(dq+"Here");
             return "You are well within the desirable age range! ";
@@ -97,23 +97,23 @@ function Test(){
             dq +=0;
             return "You are too short to be desirable. ";
         }
-        else if(formValues.height > 62 && formValues.height < 66){
+        else if(formValues.height > 62 && formValues.height <= 66){
             dq += + 0.5;
             return "You are short. ";
         }
-        else if(formValues.height > 66 && formValues.height < 69){
+        else if(formValues.height > 66 && formValues.height <= 69){
             dq += +1;
             return "You are bit on the shorter side but within the desirable range. ";
         }
-        else if(formValues.height > 70 && formValues.height < 72){
+        else if(formValues.height > 70 && formValues.height <= 72){
             dq +=+1.5;
             return "You are within the desirable height range. ";
         }
-        else if(formValues.height > 72 && formValues.height < 77){
+        else if(formValues.height > 72 && formValues.height <= 77){
             dq +=+2;
             return "You are of incredibly desirable height! ";
         }
-        else if(formValues.height > 77 && formValues.height < 80){
+        else if(formValues.height > 77 && formValues.height <= 80){
             dq +=+1;
             return "You are a bit too tall but with in desirable range ";
         }
@@ -130,23 +130,23 @@ function Test(){
             dq +=0;
             return "You are too poor. ";
         }
-        else if(formValues.salary > 30000 && formValues.salary < 55000){
+        else if(formValues.salary > 30000 && formValues.salary <= 55000){
             dq +=+ 0.2;
             return "You are poor. ";
         }
-        else if(formValues.salary > 55000 && formValues.salary < 75000){
+        else if(formValues.salary > 55000 && formValues.salary <= 75000){
             dq += + 0.5;
             return "You are a bit too poor. ";
         }
-        else if(formValues.salary > 75000 && formValues.salary < 95000){
+        else if(formValues.salary > 75000 && formValues.salary <= 95000){
             dq += + 1;
             return "You are a bit too poor bit within the desirability range. ";
         }
-        else if(formValues.salary > 95000 && formValues.salary < 120000){
+        else if(formValues.salary > 95000 && formValues.salary <= 120000){
             dq +=+1.5;
             return "You are within the desirability wealth range. ";
         }
-        else if(formValues.salary > 120000 && formValues.salary < 200000){
+        else if(formValues.salary > 120000 && formValues.salary <= 200000){
             dq +=+2;
             return "You are well withing the desirability wealth range. ";
         }
@@ -157,31 +157,31 @@ function Test(){
     }
     const calcPenis = () => {
         const curVal = dq;
-        if(formValues.penisLength < 1){
+        if(formValues.penisLength <= 1){
             dq +=0 ;
             return "Your penis is too small. No one can see it. ";
         }
-        else if(formValues.penisLength > 1 && formValues.penisLength < 2.5){
+        else if(formValues.penisLength > 1 && formValues.penisLength <= 2.5){
             dq +=+0.3;
             return "Your penis is pretty small. ";
         }
-        else if(formValues.penisLength > 2.5 && formValues.penisLength < 3.5){
+        else if(formValues.penisLength > 2.5 && formValues.penisLength <= 3.5){
             dq +=+0.5;
             return "Your penis is a bit too small. ";
         }
-        else if(formValues.penisLength > 3.5 && formValues.penisLength < 4.5){
+        else if(formValues.penisLength > 3.5 && formValues.penisLength <= 4.5){
             dq += +1;
             return "Your penis is small. ";
         }
-        else if(formValues.penisLength > 4.5 && formValues.penisLength < 5.3){
+        else if(formValues.penisLength > 4.5 && formValues.penisLength <= 5.3){
             dq +=+1.5;
             return "Your penis size is average. ";
         }
-        else if(formValues.penisLength > 5.3 && formValues.penisLength < 5.7){
+        else if(formValues.penisLength > 5.3 && formValues.penisLength <= 5.7){
             dq +=+2;
             return "Your penis size within desirable range. ";
         }
-        else if(formValues.penisLength > 5.7 && formValues.penisLength < 7.9){
+        else if(formValues.penisLength > 5.7 && formValues.penisLength <= 7.9){
             dq +=+3;
             return "Your penis size perfect! ";
         }
@@ -196,15 +196,15 @@ function Test(){
             dq +=+0.3;
             return "Your are too skinny. ";
         }
-        else if(formValues.bodyfat > 5 && formValues.bodyfat < 10){
+        else if(formValues.bodyfat > 5 && formValues.bodyfat <= 10){
             dq +=+1;
             return "Your are fit! ";
         }
-        else if(formValues.bodyfat > 10 && formValues.bodyfat < 17){
+        else if(formValues.bodyfat > 10 && formValues.bodyfat <= 17){
             dq +=+0.7;
             return "Your have an alright body. ";
         }
-        else if(formValues.bodyfat > 17 && formValues.bodyfat < 22){
+        else if(formValues.bodyfat > 17 && formValues.bodyfat <= 22){
             dq +=+0.5;
             return "Your have an average body. ";
         }
